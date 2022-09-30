@@ -1,0 +1,20 @@
+﻿<Window x:Class="Tema2_FormatoTexto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema2_FormatoTexto"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="Texto_TextBox" Text="" TextWrapping="Wrap" Margin="36,103,521,217" TextChanged="TextBox_TextChanged"/>
+        <TextBlock Text="Texto" TextWrapping="Wrap" Margin="36,82,662,331" FontSize="14"/>
+        <TextBlock Text="Color del texto" TextWrapping="Wrap" Margin="487,150,211,263" FontSize="14"/>
+        <RadioButton x:Name="Azul_RadioButton" Content="Azul" Margin="619,105,28,302" FontSize="14" GroupName="Color" Checked="Colorea"/>
+        <RadioButton x:Name="Rojo_RadioButton" Content="Rojo" Margin="619,148,28,260" FontSize="14" GroupName="Color" Checked="Colorea"/>
+        <RadioButton x:Name="Verde_RadioButton" Content="Verde" Margin="619,191,28,217" FontSize="14" GroupName="Color" Checked="Colorea"/>
+        <TextBlock x:Name="salida_TextBlock" Text="" TextWrapping="NoWrap" TextTrimming="WordEllipsis" Margin="36,283,28,92" Foreground="Black" Background="#FFF7F4B6" TextAlignment="Center" FontSize="22" FontWeight="Normal"/>
+        <CheckBox x:Name="Negrita_CheckBox" Content="Negrita" Margin="312,120,378,283" FontWeight="Bold" FontSize="14" Checked="Negrita_CheckBox_Checked" Unchecked="Negrita_CheckBox_Unchecked"/>
+        <CheckBox x:Name="Cursiva_CheckBox" Content="Cursiva" Margin="312,177,378,226" FontWeight="Normal" FontSize="14" FontStyle="Italic" Checked="Cursiva_CheckBox_Checked" Unchecked="Cursiva_CheckBox_Unchecked"/>
+    </Grid>
+</Window>
